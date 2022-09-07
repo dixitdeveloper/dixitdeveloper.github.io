@@ -40,5 +40,230 @@
     <h2>So go buy your domain NOW!</h2>
     <p>Thats it it's just for init commit i will work on it later</p>
   </article>
+  <hr>
+<p>For personal branch</p>
+<p>Brightness button done</p>
+<ul>
+<li>install brightnessctl</li>
+<li>for Arch: sudo pacman -S brightnessctl</li>
+</ul>
+<p>volume button done</p>
+<p>sallow patch done Dependencies on suckless site:</p>
+<ul>
+<li>libxcb</li>
+<li>Xlib-libxcb</li>
+<li>xcb-res For Arch: sudo pacman -S libxcb xcb-util ##Better fonts For Arch: sudo pacman -S terminus-font</li>
+</ul>
+<hr>
+<h1 id="babas-dwm-build">BABA's DWM Build</h1>
+<h3 id="patches-use-in-this-build-for-extending-dwm-functionality">Patches use in this build for extending dwm functionality</h3>
+<ol>
+<li><a href="https://dwm.suckless.org/patches/pertag/">pertag</a> This patch keeps layout, mwfact, barpos and nmaster per tag.</li>
+<li><a href="https://dwm.suckless.org/patches/alwayscenter/">alwayscenter</a> All floating windows are centered, like the center patch, but without a rule.</li>
+<li><a href="https://dwm.suckless.org/patches/attachbottom/">attachbottom</a> New clients attach at the bottom of the stack instead of the top.</li>
+<li><a href="https://dwm.suckless.org/patches/warp/">warp</a> This patch warps the mouse cursor to the center of the currently focused window or screen when the mouse cursor is (a) on a different screen or (b) on top of a different window. In simple terms keep mouse cursor on selected window.</li>
+<li><a href="https://dwm.suckless.org/patches/fakefullscreen/">fakefullscreen</a> Only allow clients to "fullscreen" into space currently given to them. As an example, this will allow you to view a fullscreen video in your browser on one half of the screen, while having the other half available for other tasks.</li>
+<li><a href="https://dwm.suckless.org/patches/functionalgaps/">functionalgaps</a> Functionalgaps combines the beautifully simplistic gaps of <a href="https://dwm.suckless.org/patches/fullgaps/">fullgaps</a> with the non-gaps of <a href="https://dwm.suckless.org/patches/singularborders/">singularborders</a> and <a href="https://dwm.suckless.org/patches/noborder/">noborder</a>. It is named functionalgaps because, since gaps are purely aesthetic, and therefore not useful whatsoever, this patch adds to their functionality by allowing them to easily be turned off. This patch is also unique because of its out of the box integration with <a href="https://dwm.suckless.org/patches/pertag/">pertag</a>, allowing gaps to be enabled/disabled and sized on a per-tag basis.</li>
+</ol>
+<h1 id="screenshot">Screenshot</h1>
+<p><img src="https://user-images.githubusercontent.com/100849131/188226247-c7b77536-93db-4f7b-9a0b-867efa799477.png" alt="screenshot" style="width: 720px;" /></p>
+<h1 id="keybindingsshortcuts">Keybindings/Shortcuts</h1>
+<h3 id="by-default-mod-key-is-windows-key">By default Mod-key is Windows-key</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>[Mod] + [Shift] + [=]</td>
+<td>Toggle Gaps</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [Shift] + [-]</td>
+<td>Reset Gaps</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [+]</td>
+<td>Increase Gaps</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [-]</td>
+<td>Decrease Gaps</td>
+</tr>
+<tr class="odd">
+<td>[Shift] + [Mod] + [Enter]</td>
+<td>launch terminal</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [b]</td>
+<td>show/hide bar</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [p]</td>
+<td>dmenu</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [Enter]</td>
+<td>push acive window from stack to master, or pulls last used window from stack onto master</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [j / k]</td>
+<td>focus on next/previous window in current tag</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [h / l]</td>
+<td>increases / decreases master size</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [2]</td>
+<td>moves your focus to tag 2</td>
+</tr>
+<tr class="even">
+<td>[Shift] + [Mod] + [2]</td>
+<td>move active window to the 2 tag</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [i / d]</td>
+<td>increases / decreases number of windows on master</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [, / .]</td>
+<td>move focus between screens (multi monitor setup)</td>
+</tr>
+<tr class="odd">
+<td>[Shift] + [Mod] + [, / .]</td>
+<td>move active window to different screen</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [0]</td>
+<td>view all windows on screen</td>
+</tr>
+<tr class="odd">
+<td>[Shift] + [Mod] + [0]</td>
+<td>make focused window appear on all tags</td>
+</tr>
+<tr class="even">
+<td>[Shift] + [Mod] + [c]</td>
+<td>kill active window</td>
+</tr>
+<tr class="odd">
+<td>[Shift] + [Mod] + [q]</td>
+<td>quit dwm</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [t]</td>
+<td>tiled mode []=</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [f]</td>
+<td>floating mode &gt;&lt;&gt;</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [m]</td>
+<td>monocle mode [M] (single window fullscreen)</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [RightMouseButton]</td>
+<td>to resize the floating window</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [LeftMouseButton]</td>
+<td>to move the floating window around</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [Space]</td>
+<td>toggles to the previous layout mode</td>
+</tr>
+<tr class="even">
+<td>[Mod] + [Shift]+[Space]</td>
+<td>to make an individual window float</td>
+</tr>
+<tr class="odd">
+<td>[Mod] + [MiddleMouseButton]</td>
+<td>to make an individual window un-float</td>
+</tr>
+</tbody>
+</table>
+<h1 id="install">Install</h1>
+<h3 id="note">Note</h3>
+<ul>
+<li>If you can compile bare bone dwm, you can compile this too. NO extra dependencies needed.</li>
+</ul>
+<h3 id="requirements">Requirements</h3>
+<ul>
+<li><a href="https://st.suckless.org/">st</a> - simple/suckless terminal</li>
+<li><a href="https://tools.suckless.org/dmenu/">dmenu</a> - dynamic menu for X, originally designed for dwm.</li>
+</ul>
+<h3 id="dependencies-for-dwm">Dependencies for DWM</h3>
+<ul>
+<li>On Arch Linux:</li>
+</ul>
+<pre><code>sudo pacman -S base-devel libx11 libxft libxinerama freetype2 fontconfig
+</code></pre>
+<ul>
+<li>On Debian:</li>
+</ul>
+<pre><code>sudo apt install build-essential libx11-dev libxft-dev libxinerama-dev libfreetype6-dev libfontconfig1-dev
+</code></pre>
+<ul>
+<li><p>On OpenBSD: if Xenocara is installed, dependencies are already met.</p></li>
+<li><p>On Void Linux (case sensitive):</p></li>
+</ul>
+<pre><code>sudo xbps-install base-devel libX11-devel libXft-devel libXinerama-devel freetype-devel fontconfig-devel
+</code></pre>
+<h3 id="after-installing-dependencies-run-step-by-step-this-commands-on-terminal">After installing dependencies run step by step this commands on terminal</h3>
+<pre><code>mkdir suckless &amp;&amp; cd suckless &amp;&amp; git clone https://github.com/dixitdeveloper/dwm.git
+</code></pre>
+<ul>
+<li>If you already have st and dmenu installed on system you can skip this step</li>
+</ul>
+<pre><code>git clone https://git.suckless.org/st &amp;&amp; git clone https://git.suckless.org/dmenu &amp;&amp; cd st &amp;&amp; sudo make clean install &amp;&amp; cd ../dmenu &amp;&amp; sudo make clean install &amp;&amp; cd ../
+</code></pre>
+<ul>
+<li>now it's time to compile dwm</li>
+</ul>
+<pre><code>cd dwm &amp;&amp; sudo make clean install
+</code></pre>
+<ul>
+<li>If you find any error just search on google dwm compilation dependencies according to your destro and install them on your system and compile dwm again. You good to go.</li>
+<li>Because of dependencies problem we did't include <a href="https://dwm.suckless.org/patches/swallow/">swallow</a> patch.</li>
+<li>Again, If you can compile bare bone dwm, you can compile this too. NO extra dependencies needed.</li>
+</ul>
+<h1 id="use-dwm-with-display-manager">Use DWM with Display Manager</h1>
+<ul>
+<li>Go to</li>
+</ul>
+<pre><code>cd /usr/share/xsessions
+</code></pre>
+<ul>
+<li>Create desktop file</li>
+</ul>
+<pre><code>sudo touch dwm.desktop
+</code></pre>
+<ul>
+<li>Put This content in dwm.desktop file</li>
+</ul>
+<pre><code>[Desktop Entry]
+Encoding=UTF-8
+Name=Dwm
+Comment=Dynamic window manager
+Exec=/usr/local/bin/dwm
+Icon=dwm
+Type=XSession
+</code></pre>
+<ul>
+<li>Now loged out</li>
+</ul>
+<h1 id="use-dwm-with-startx">Use DWM with startx</h1>
+<ul>
+<li>If you’re using startx, simply add <strong>exec /usr/local/bin/dwm</strong> or <strong>exec dwm</strong> at the end of your .xinitrc file on Linux, or at the end of your .xsession file on OpenBSD.</li>
+</ul>
+<h1 id="last-step">Last step</h1>
+<h2 id="change-fonts-make-some-configration-and-make-it-yours">Change Fonts, make some configration and MAKE IT YOURS</h2>
+
+
 </body>
 </html>
